@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+     <center><h1><b><u>Application Form</u></b></h1></center>
+    <form action="" method="post" autocomplete="off">
+        <!--action="" it save filename in database-->
+        <!--autocomplete="off"  =off the previous data suggestions-->
+        <!--method="get"  insecure data and details visible in url to user (2048 values)-->
+        <!--method="post" secure data-->
+        <fieldset>
+             <legend>Enter the field</legend>
+    <table>
+        <tr>
+            <td>
+                <label for="">Upload the profile</label>
+            </td>
+            <td>
+                <a href="https://in.images.search.yahoo.com/search/images?p=pixabay&fr=mcafee&type=E211IN826G0&imgurl=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2017%2F10%2F10%2F07%2F48%2Fbeach-2836300_960_720.jpg#id=28&iurl=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2017%2F10%2F10%2F07%2F48%2Fbeach-2836300_960_720.jpg&action=click" target="">Nature</a>
+                <input type="image" name="image" src="https://cdn.pixabay.com/photo/2017/10/10/07/48/beach-2836300_960_720.jpg" height="100px" width="100px" style="border-radius: 50&;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="fn">First name</label>
+            </td>
+            <td>
+                <input type="text" id="fn" name="fn" placeholder="Enter the first name" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="ln">last name</label>
+            </td>
+            <td>
+                <input type="text" id="ln" name="ln" placeholder="Enter the last name" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="mail">E-mail</label>
+            </td>
+            <td>
+                <input type="email" id="mail" name="email" placeholder="Enter the mail" required>
+                      <!--type="text"-->
+            </td>
+        </tr>
+        <tr>
+            <td>
+               <label for="num">Number</label>
+            </td>
+            <td>
+               <input type="tel" id="num" name="num" placeholder="Enter the Number" required>
+               <!-- type="number" value for number-->
+            </td>
+        </tr>
+        <tr>
+            <td>
+               <label for="text">address</label>
+            </td>
+            <td>
+              <textarea  id="text" name="text" placeholder="Enter the address" required></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+               <label for="texch">Technology</label>
+            </td>
+            <td>
+               <select id="texch" name="tech">
+                  <option value="">HTML</option>
+                  <option value="">CSS</option>
+                  <option value="" selected>JS </option>
+                    <!--<option value="" selected>js</option>-->
+                    <!--by default it will select js-->
+                  <option value="" >React JS</option>
+                 
+               </select>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">Gender</label>
+            </td>
+            <td>
+                <input type="radio" id="" name="gender" value="Male">Male
+                <input type="radio" id=""name="gender" value="Female">Female
+                <input type="radio"id=""name="gender"value="Others">Others
+
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                 <label for="">Sports</label>
+            </td>
+           <td>
+                <input type="checkbox" name="spo" value="Cricket">Cricket
+                 <input type="checkbox" name="spo1" value="Kabaddi">Kabaddi
+                 <input type="checkbox" name="spo2" value="Vollyball">Vollyball
+                 <input type="checkbox"name="spo3" value="Rugby">Rugby
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="">DOB</label>
+            </td>
+            <td>
+                <input type="date" id="" name="" required>
+                <!--<input type="date-time local" id="" name="" required>
+                <input type="month" id="" name="" required>
+                <input type="day"   id="" name="" required>
+                <input type="week"  id="" name="" required>-->
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="photo">upload a file</label>
+            </td>
+            <td>
+                <input type="file" id="photo" name="" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="rg">choose as range</label>
+            </td>
+            <td>
+                <input type="range" id="rg" name="" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="clr">select a color</label>
+            </td>
+            <td>
+                <input type="color" id="clr" name="" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="pass">password</label>
+            </td>
+            <td>
+                <input type="password" id="pass" name="" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="li">Enter the URL</label>
+            </td>
+            <td>
+                <input type="URL" id="li" name="" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="url">Enter the URL</label>
+            </td>
+            <td>
+                <input type="search" id="url" name="" required>
+            </td>
+        </tr>
+        
+        <tr>
+          <td>
+            <input type="submit" value="submit">
+            <!--<button>submit</button>-->
+        
+          </td>
+          <td>
+            
+            <button type="reset">cancel</button>
+          </td>
+        </tr>
+
+    </table>
+    </fieldset>
+    </form>
+    
+</body>
+</html>

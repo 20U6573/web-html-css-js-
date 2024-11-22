@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #combinator h1{
+            height: 100px;
+            width: 200px;
+            background-color: red;
+        }
+        #combinator>h1{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+        }
+        #combinator+h1{
+            height: 100px;
+            width: 200px;
+            background-color: yellow;
+        }
+        #combinator~h1{
+            height: 100px;
+            width: 200px;
+            background-color: hotpink;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="combinator">
+        <div>Have a great day</div>
+        <h1>Good Noon</h1>
+        <section>
+            <h1>start a day with smile and hope</h1>
+            <h1>Happy Dipawali</h1>
+            <h1>Nice to meet you</h1>
+            <h2>Loads of chocolate</h2>
+        </section>
+    </div>
+    <h1>i am adjacent to combinator</h1>
+    <h1>welcome to css</h1>   <!--general selector-->
+    
+</body>
+</html>

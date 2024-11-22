@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: repeating-conic-gradient(red 0.26deg,blue 0.47deg);
+}
+#linear{
+    height: 50vh;
+    width: 50vw;
+    background-image: linear-gradient(to right,red,yellow);
+    /* sharpcolor */
+    background-image: linear-gradient(red 0%,red 50%,yellow 50%,yellow 100%);
+}
+#r-linear{
+    height: 50vh;
+    width: 50vw;
+    border: 3px solid white;
+    background-image: repeating-linear-gradient(to top right,white 0%,white 5%,black 5%,black 10%);
+
+}
+#radial{
+    height: 50vh;
+    width: 50vw;
+    border: 3px solid white;
+    background-image: radial-gradient(blue 0%,blue 25%,yellow 25%,yellow 50%,hotpink
+    50%);
+}
+#r-radial{
+    height: 50vh;
+    width: 50vw;
+    border: 3px solid white;
+    background-image: repeating-radial-gradient(hotpink 0%,hotpink 15%,black 15%,black 20%);
+}
+#gradiant{
+    height: 50vh;
+    width: 50vw;
+    background-image: linear-gradient(orange 0%,orange 33.3%,white 33.3%,white 66.6%,green 66.6%);
+    /* border-radius: 100%; */
+    position:relative;
+
+}
+
+#chakra{
+    height: 16vh;
+    width: 15vw;
+    background-image: repeating-conic-gradient(blue 0%,blue 2.10%,white 2.10%,white 4.20%);
+    border-radius: 50%;
+    position: absolute;
+    top: 95px;
+    left: 240px;
+}

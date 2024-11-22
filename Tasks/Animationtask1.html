@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task on animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: bisque;
+        }
+        h1{
+            text-align: center;
+        }
+        #text{
+            font-size: 100px;
+            position: absolute;
+            top: 200px;
+        }
+        span::before{
+            content: "HTML";
+            animation: text 10s linear 1s infinite;
+        }
+        @keyframes text{
+            0%{
+                content:"HTML";
+                color:red;
+            }
+            20%{
+                content:"CSS";
+                color:blueviolet;
+            }
+            40%{
+                content:"JAVASCRIPT";
+                color:yellow;
+            }
+           60%{
+            content: "REACT JS";
+            color: brown;
+           }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Task on Animation</h1>
+    <h1 id="text">This technologies are awesome <span></span></h1>
+</body>
+</html>

@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+}
+h1{
+    text-align: center;
+    text-decoration: 5px solid black underline;
+}
+#ani-box{
+    height: 60vh;
+    width: 50vw;
+    background-color: brown;
+    margin: 100px auto;
+    background-image: url("Rose");
+    background-repeat: no-repeat;
+    background-size: 50vw 60vh;
+    border-radius: 5%;
+    animation-name: nature1;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0.1ms;
+}
+@keyframes nature1{
+    /* from{
+        background-image: url("Rose");
+    }
+    to{
+        background-image: url("teddy");
+    } */
+     0%{
+        background-image: url("teddy2");
+     }
+     25%{
+        background-image: url("teddy3");
+        position: relative;
+        left: 200px;
+        top: 0;
+     }
+     50%{
+        background-image: url("dora");
+        position: relative;
+        top: 200px;
+        left: 200px;
+     }
+     75%{
+        background-image: url("chocy");
+        position: relative;
+        top: 200px;
+        left: 0;
+
+     }
+     100%{
+        background-image: url("nature\ water1");
+        position: relative;
+        left: 0;
+        top: 0;
+     }
+}

@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    font-size: 30px;
+}
+#grid-container{
+    height: 180vh;
+    width: 85vw;
+    background-color: white;
+    border: 2px solid orange;
+    margin: 150px auto;
+    display: grid;  
+    grid-template-rows: 25% 25%  25% 25% ; 
+    
+}
+.items{
+    background-color:bisque;
+    border: 2px solid black;
+}
+#grid-container1{
+    height: 30vh;
+    width: 80vw;
+    background-color:aqua;
+    margin: 40px auto;
+    display: grid;
+    justify-content: space-around;
+    align-content: center;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 130px auto;
+    border: 5px solid greenyellow;
+}
+#grid-container2{
+    height: 30vh;
+    width: 80vw;
+    background-color:aqua;
+    margin: 40px auto;
+    display: grid;
+    align-content: center;
+    justify-content: space-around;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 130px auto;
+    border: 5px solid greenyellow;
+}
+#grid-container3{
+    height: 30vh;
+    width: 80vw;
+    background-color:aqua;
+    margin: 40px auto;
+    display: grid;
+    align-content: center;
+    justify-content: space-around;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 130px auto;
+    border: 5px solid greenyellow;
+}
+#grid-container4{
+    height: 30vh;
+    width: 80vw;
+    background-color:aqua;
+    margin: 40px auto;
+    display: grid;
+    align-content: center;
+    justify-content: space-around;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 130px auto;
+    border: 5px solid greenyellow;
+}
+#gird-items8{
+    grid-template-rows: 100px auto;
+    justify-content: space-around;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 40% 40%;
+    
+    
+}
+#gird-items3{
+    grid-template-rows: 27% 27%  27%;
+    grid-template-columns:150px ;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    gap:5px;
+}
+#gird-items4{
+    grid-template-rows: 35% 35%;
+    grid-template-columns:150px ;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    gap:5px;  
+}
+#gird-items5{
+    grid-template-rows: 35% 35%;
+    grid-template-columns:150px ;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    gap:5px;
+}
+.items1{
+    background-color:hotpink;
+    border: 2px solid black;
+}

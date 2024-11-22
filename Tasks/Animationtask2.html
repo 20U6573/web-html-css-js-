@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation task 2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: white;
+            background-image: url("sky");
+            background-repeat: no-repeat;
+            height: 500px;
+            width: 100%;
+            background-size: 100% 600px;
+        }
+        #flight{
+            height: 0px;
+            width: 170px;
+            background-color: white;
+            background-image: url(../images/flight2.png);
+            background-size: 80px 170px;
+            background-repeat: no-repeat; 
+            animation: flight 5s linear infinite;
+        }
+        @keyframes flight {
+            0%{
+                position: relative;
+                top: 150px;
+                left: 0px;
+            }
+            100%{
+                position: relative;
+                top: 0;
+                left: 1000px;
+            }
+        }
+        #cloud1{
+           
+            height: 0px;
+            width: 100px;
+            background-color: white;
+            margin: 0px 0px;
+            animation: cloud1 10s linear infinite;
+        }
+        #cloud2{
+            height: 0px;
+            width: 100px;
+            background-color: white;
+            margin: 50px 270px;
+            animation: cloud1 10s linear infinite;
+        }
+        #cloud3{
+            height: 0px;
+            width: 100px;
+            background-color: white;
+            margin: 70px 550px;
+            animation: cloud1 10s linear infinite;
+        }
+        /* #cloud4{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 130px 30px;
+            animation-name: cloud1;
+            animation-duration: 10s;
+            animation-timing-function: linear is infinite;
+            animation-delay: 0.1ms;
+        } */
+        @keyframes cloud1 {
+            0%{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+            100%{
+                position: absolute;
+                top: 0px;
+                left: 400px;
+            }
+        }
+       
+        #garden{
+            background-image: url(../images/garden.webp);
+            background-repeat: no-repeat;
+            background-size: 100% 400px;
+            height: 400px;
+            width: 100%;
+            position: absolute;
+            top: 300px;
+        }
+        #bird1{
+           height: 0px;
+           width: 50px;
+           background-color: white;
+           background-image: url(../images/bird1.png);
+           background-repeat: no-repeat;
+           background-size: 50px 100px;
+           margin: 20px 20px;
+           animation: birds 22s linear infinite;
+       }
+       #bird2{
+           height: 0px;
+           width: 50px;
+           background-color: white;
+           background-image: url(../images/bird2.png);
+           background-repeat: no-repeat;
+           background-size: 50px 100px;
+           margin: 150px 350px;
+           animation: bird2 26s linear infinite;
+       }
+       #bird3{
+           height: 0px;
+           width: 50px;
+           background-color: white;
+           background-image: url(../images/bird3.png);
+           background-repeat: no-repeat;
+           background-size: 50px 100px;
+           margin: 70px 200px;
+           animation: birds 30s linear infinite;
+       }
+       @keyframes birds {
+            0%{
+                position: absolute;
+                top: 20px;
+                left: 0px;
+            }
+            100%{
+                position: absolute;
+                top: 0px;
+                left: 900px;
+            }
+        }
+        @keyframes bird2 {
+            0%{
+                position: absolute;
+                top: 0px;
+                right: 0px;
+            }
+            100%{
+                position: absolute;
+                top: 0px;
+                right: 900px;
+            }
+        }
+         #garden{
+            background-image: url("grass");
+            background-repeat: no-repeat;
+            background-size: 100% 400px;
+            height: 300px;
+            width: 100%;
+            position: absolute;
+            top: 300px;
+    }
+        
+        #road{
+            background-image: url("road");
+            background-repeat: no-repeat;
+            background-size: 100% 300px;
+            height: 400px;
+            width: 100%;
+            position: absolute;
+            top: 600px;
+        }
+        #bike{
+           height: 0px;
+           width: 100px;
+           background-size: cover;
+           background-color: white;
+           margin: 120px 0px;
+           animation: bike 15s linear infinite;
+       }
+       @keyframes bike {
+            0%{
+                position: absolute;
+                top: 100px;
+                left: 0px;
+            }
+            100%{
+                position: absolute;
+                top: 50px;
+                left: 1000px;
+            }
+        }
+        #car{
+           height: 0px;
+           width: 100px;
+           background-color: white;
+           background-size: cover;
+           margin: 0px 0px;
+           animation: car 10s linear infinite;
+       }
+       @keyframes car {
+            0%{
+                position: absolute;
+                /* top: 0px; */
+                bottom: 330px;
+                right: 200px;
+            }
+            100%{
+                position: absolute;
+                /* top: 0px; */
+                bottom: 420px;
+                right: 1050px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <nav id="flight" >
+            <img src="aeroplane" alt="" height="100px" width="180px" style="background-repeat: no-repeat; ">
+        </nav>
+        <nav id="sun"></nav>
+
+            <nav id="cloud1">
+                <img src="cloud" alt="" height="150px" width="250px" style="background-repeat: no-repeat; ">
+            </nav>
+            <nav id="cloud2">
+                <img src="cloud" alt="" height="150px" width="250px" style="background-repeat: no-repeat; ">
+            </nav>
+            <nav id="cloud3">
+                <img src="cloud" alt="" height="150px" width="250px" style="background-repeat: no-repeat; ">
+            </nav>
+        
+        <nav id="garden">
+
+            <div id="birds">
+                <nav id="bird1">
+                    <img src="birds" alt="" height="120px" width="150px" style="background-repeat: no-repeat; ">
+                </nav>
+                <nav id="bird2">
+                    <img src="birds" alt="" height="120px" width="150px" style="background-repeat: no-repeat; ">
+                </nav>
+                <nav id="bird3">
+                    <img src="birds" alt="" height="100px" width="150px" style="background-repeat: no-repeat; ">
+                </nav>
+                <nav id="bird3"></nav>
+            </div>
+        </nav>
+        <div id="road">
+            <nav id="car">
+                <img src="car" alt="" height="120px" width="200px" style="background-repeat: no-repeat; ">
+            </nav>
+            <nav id="bike">
+                <img src="bike" alt="" height="120px" width="200px" >
+            </nav>
+        </div>
+    </div>
+</body>
+</html>

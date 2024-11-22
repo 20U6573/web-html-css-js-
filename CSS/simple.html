@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: goldenrod;
+            color: hotpink;
+        }
+        #re{
+            background-color: greenyellow;
+            color: red;
+            font-size: 50px;
+        }
+        .dog{
+            background-color: black;
+            color: white;
+            font-size: 80px;
+        }
+        header{
+            background-color: teal;
+            height: 200px;
+            width: 400px;
+        }
+        pre,footer,p{
+            color: brown;
+            background-color: yellow;
+            font-size: 50px;
+        }
+        *{
+            background-color:aqua;
+        }
+
+    </style>
+</head>
+<body><!--simple selectors-->
+       <!--id(is used to target sigle html tag)-->
+    <h1 id="re">I am Rekhaa</h1>
+    <h1> I am Rekhaa </h1>
+
+      <!--class(is used target whole html code)-->
+      article.dog{i am article}+section.dog{i ams section}+aside.dog{i am side}
+      <article class="dog">i am article</article>
+      <section class="dog">i am section</section>
+      <aside class="dog">i am side</aside>
+
+      <!--tag name-->
+      <header>
+
+      </header>
+       <!--if there is two header tag then we should use id for one header-->
+
+       <!--grouping-->
+       <p>Lorem ipsum dolor sit amet.</p>
+        <footer>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, recusandae?</footer>
+        <pre>Lorem ipsum dolor sit amet consectetur.</pre>
+
+        <!--* targets whole html body-->
+</body>
+</html>

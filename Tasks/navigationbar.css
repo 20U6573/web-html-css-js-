@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: aqua; */
+    
+}
+#nav1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    border: 1px solid white;
+}
+a{
+    color: white;
+    text-decoration: none;
+
+}
+#nav2{
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#contents{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+#logo>h1{
+    position: absolute;
+    top: 70px;
+    left: 100px;
+
+}
+header{
+    position: sticky;
+    top: 0;
+}
+#bc-img{
+    height: 400px;
+    width: 100%;
+    background-image: url("apple\ white");
+    background-repeat: no-repeat;
+    background-size: 50% 60%;
+    position: relative;
+    /* left: 600px; */
+    background-color: black;
+
+
+}
+#icons{
+    display: center;
+    justify-content: space-between;
+    align-items: center;
+    /* position: absolute; */
+    /* left:200px ; */
+    width:10%;
+    
+}
+#main1{
+    height: 400px;
+    width: 100%;
+    background-color:white;
+    position: absolute;
+    justify-content: center;
+    bottom: 200px;
+    top: 500px;
+
+}
+#contents1>li{
+    color:black;
+}
+#contents1>li>a{
+    list-style: none;
+    color: black;
+}
+#contents1{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 60px;
+    color: black;
+}
+#img1{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    
+}

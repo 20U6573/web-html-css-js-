@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--descendant selector (space)
+    child (>)
+    Adjacent sibling(+)
+    General sibling(~)-->
+    <style>
+        *{
+            margin: 0;
+        }
+        nav{
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+            background-color: black ;
+            color: white;
+        }
+        #content{
+            display: flex;
+            width: 30%;
+            justify-content: space-around;
+            align-items: center;
+        }
+        a{
+            list-style: none;
+        }
+        nav h1{
+            color: orange;
+        }
+        #content+#cart{
+            color:orange;
+        }
+        #cart h2{
+            color: blue;
+        }
+        #cart>h2{
+            color: orange;
+        }
+        main{
+            height: 500px;
+            width: 60%;
+            background-image: url("pic9");
+            background-repeat: no-repeat;
+
+            background-size: 60% 500px;
+        }
+        body{
+            background-image: url("pic5");
+            background-repeat: no-repeat;
+            background-size: 100% 600px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <h1>Logo</h1>
+            </div>
+            <div id="content">
+                <h1>Home</h1>
+                <li><a href="">Services</a></li>
+                <li><a href="">Products</a></li>
+            </div>
+            <div id="cart">
+                <h2>Cart</h2>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+</body>
+</html>

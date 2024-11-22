@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+}
+#grid-container{
+    height: 60vh;
+    width: 70vw;
+    margin: 100px auto;
+    background-color: black;
+    display: grid;
+
+    gap: 5px 3px;
+    grid-template-areas: "hdr hdr hdr hdr"
+                          "hdr1 hdr1 hdr1 hdr1"
+                          "scn asd asd art"
+                          "scn asd asd art"
+                          "ftr ftr ftr ftr";
+}
+.items{
+    background-color: white;
+    border: 2px solid blue;
+}
+#grid-items1{
+    grid-area: hdr;
+}
+#grid-items2{
+    grid-area: hdr1;
+}
+#grid-items3{
+    grid-area: scn;
+}
+#grid-items4{
+    grid-area: asd;
+}
+#grid-items5{
+    grid-area: art;
+}
+#grid-items6{
+    grid-area: ftr;
+}

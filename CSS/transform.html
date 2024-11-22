@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            height: 70px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav>div:nth-child(2){
+            display: flex;
+            justify-content: space-around;
+            width: 40%;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color: azure;
+
+        }
+        li{
+            list-style: none;
+        }
+        input{
+            padding: 5px 10px;
+        }
+        body{
+            background-color: bisque;
+        }
+        #transform{
+            height: 300px;
+            width: 300px;
+            background-color: aqua;
+            margin: 150px auto;
+            transition: transform 3s linear 0.1ms;
+
+        }
+        #transform:hover{
+            transform: rotate(360deg);
+            transform: translateX(400px);
+            transform: translateY(-400px);
+            transform: translate(300px,-400px);
+            transform: scaleX(2);
+            transform: scaleY(0.5);
+            transform: skewX(60deg);
+            transform: skewY(40deg);
+            transform: skew(30deg,50deg);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="home">
+                <img src="" alt="">
+            </div>
+            <div id="content">
+                <li><a href="">Products</a></li>
+                <li><a href="">Services</a></li>
+                <input type="text" placeholder="Search...">
+                <li><a href="">Cart</a></li>
+
+            </div>
+        </nav>
+    </header>
+
+    <div id="transform">
+
+    </div>
+    
+</body>
+</html>

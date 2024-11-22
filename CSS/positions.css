@@ -1,0 +1,50 @@
+body{
+    background-color: aqua;
+}
+*{
+    margin: 0;
+}
+#positions{
+    height:80vh ;
+    width: 70vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100% 0% 0% 100%;
+    border-radius: 10px;
+    position: relative;
+}
+#relative{
+    height: 120px;
+    width: 120px;
+    background-color: green;
+    position: relative;
+    top: 150px;
+}
+#absolute{
+    height: 120px;
+    width: 120px;
+    background-color: hotpink;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* fixed for entire webpage */
+#fixed{
+    height: 120px;
+    width: 120px;
+    background-color: blue;
+    position: fixed;
+    top: 350px;
+    right: 100px;
+}
+/* fixed that untill the parent is there */
+#sticky{
+    height: 120px;
+    width: 120px;
+    background-color: yellow;
+    position: sticky;
+    top: 0px;
+}
